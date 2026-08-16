@@ -1,0 +1,4 @@
+.demo-bar { min-height: var(--demo-bar-h); padding: 6px 24px; display:flex; align-items:center; justify-content:space-between; gap:20px; background:#0b0b0a; color:#ece7df; font-size:10px; letter-spacing:.06em; text-transform:uppercase; }
+.demo-bar a { opacity:.72; }
+.demo-bar a:hover { opacity:1; }
+@media(max-width:640px){.demo-bar{padding-inline:12px;font-size:9px}.demo-bar a{display:none}}
