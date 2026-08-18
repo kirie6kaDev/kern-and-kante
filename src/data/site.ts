@@ -26,7 +26,7 @@ export const site = {
     heading: 'Räume aus Holz.',
     headingAccent: 'Für Menschen gemacht.',
     text: 'Kern & Kante ist eine fiktive Holzmanufaktur für individuelle Möbel und Innenausbau. Wir verbinden traditionelles Handwerk mit zeitgemäßem Design.',
-    image: '/images/craft.jpg',
+    image: '/images/craft.webp',
     imageAlt: 'Holzhandwerk in der Werkstatt',
   },
   business: {

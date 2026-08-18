@@ -10,7 +10,7 @@ export function About() {
           <p className="eyebrow">{site.about.eyebrow}</p>
           <h2>{site.about.heading}<br /><span>{site.about.headingAccent}</span></h2>
           <p className="body-copy">{site.about.text}</p>
-          <a className="button button--outline" href="#services">Mehr über uns →</a>
+          <a className="button button--outline" href="#services">Unsere Leistungen →</a>
         </Reveal>
         <Reveal className="about__media" delay={0.08}>
           <img src={site.about.image} alt={site.about.imageAlt} loading="lazy" decoding="async" />

@@ -34,7 +34,7 @@ export function Projects() {
   }
 
   return (
-    <section className="projects-section snap-section" id="projects">
+    <section className="projects-section snap-section" id="projects" data-scroll-assist="true">
       <div className="section-inner">
         <div className="projects-head">
           <div><p className="eyebrow">Ausgewählte Projekte</p><h2>Selected work</h2></div>
@@ -47,10 +47,10 @@ export function Projects() {
           </div>
         </div>
 
-        <div ref={railRef} className="projects-rail" aria-label="Ausgewählte Projekte">
+        <div ref={railRef} className="projects-rail" aria-label="Ausgewählte Projekte" tabIndex={0}>
           {projects.map((project) => (
             <article className="project-tile" key={project.id} data-project-card>
-              <a href={`#${project.slug}`} className="project-tile__link" aria-label={`${project.title} ansehen`}>
+              <a href={`/projekte/${project.slug}`} className="project-tile__link" aria-label={`${project.title} ansehen`}>
                 <div className="project-tile__media">
                   <img src={project.image} alt={`${project.title} — ${project.category}`} loading="lazy" decoding="async" />
                   <div className="project-tile__shade" />

@@ -5,7 +5,7 @@ import './Contact.css'
 export function Contact() {
   const { business } = site
   return (
-    <section className="contact-section snap-section" id="contact">
+    <section className="contact-section snap-section" id="contact" data-scroll-assist="true">
       <div className="section-inner contact-grid">
         <Reveal>
           <p className="eyebrow">Kontakt</p>
