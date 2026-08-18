@@ -11,7 +11,7 @@ export function Footer() {
       <div className="section-inner footer-grid">
         <div><div className="brand">{site.brand.name}<span>{site.brand.descriptor}</span></div><p>Fictional commercial concept by Kirie6ka_Dev.</p></div>
         <div><h4>Navigation</h4><a href="#projects">Projekte</a><a href="#services">Leistungen</a><a href="#about">Über uns</a><a href="#contact">Kontakt</a></div>
-        <div><h4>Rechtliches</h4><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+        <div><h4>Rechtliches</h4><p>Demo-Konzept · keine reale Firma</p><p>Keine realen Geschäftsdaten</p></div>
         <div><h4>Kontakt</h4><p>{site.business.city} · {site.business.country}</p><a href={`mailto:${site.business.email}`}>{site.business.email}</a></div>
       </div>
     </footer>

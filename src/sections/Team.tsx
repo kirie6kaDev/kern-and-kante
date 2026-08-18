@@ -4,7 +4,7 @@ import './Team.css'
 
 export function Team() {
   return (
-    <section className="team-section snap-section" id="team">
+    <section className="team-section snap-section" id="team" data-scroll-assist="true">
       <div className="section-inner team-inner">
         <Reveal className="team-heading">
           <div><p className="eyebrow">Unser Team</p><h2>Menschen hinter<br />dem Handwerk.</h2></div>

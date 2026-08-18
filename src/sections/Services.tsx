@@ -4,7 +4,7 @@ import './Services.css'
 
 export function Services() {
   return (
-    <section className="services-section snap-section section-dark" id="services">
+    <section className="services-section snap-section section-dark" id="services" data-scroll-assist="true">
       <div className="section-inner">
         <Reveal className="section-heading">
           <div><p className="eyebrow">Was wir schaffen</p><h2>Leistungen</h2></div>

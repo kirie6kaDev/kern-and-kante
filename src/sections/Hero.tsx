@@ -38,7 +38,7 @@ export function Hero() {
   const prev = () => moveTo((active - 1 + projects.length) % projects.length)
 
   return (
-    <section ref={ref} className="hero-scroll snap-section" aria-label="Ausgewähltes Projekt">
+    <section ref={ref} className="hero-scroll snap-section" aria-label="Ausgewähltes Projekt" data-scroll-assist="true">
       <motion.div
         className={[
           'hero',
@@ -110,7 +110,7 @@ export function Hero() {
               <span className="hero__eyebrow">Featured project</span>
               <h1>{project.title}</h1>
               <p>{project.category} · {project.location} · {project.year}</p>
-              <MagneticLink className="button button--light" href="#projects" strength={0.1}>
+              <MagneticLink className="button button--light" href={`/projekte/${project.slug}`} strength={0.1}>
                 Projekt ansehen <span aria-hidden="true">→</span>
               </MagneticLink>
             </motion.div>
@@ -131,6 +131,7 @@ export function Hero() {
             </button>
           ))}
         </div>
+        <p className="sr-only" aria-live="polite">Projekt {active + 1} von {projects.length}: {project.title}</p>
       </motion.div>
     </section>
   )
